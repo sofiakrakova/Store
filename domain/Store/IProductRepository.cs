@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Store
 {
-    interface IProductRepository
+    public interface IProductRepository
     {
+        Product[] GetAllByTitle(string titlePart);
+
     }
 }

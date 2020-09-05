@@ -2,7 +2,16 @@
 
 namespace Store
 {
-    public class Class1
+    public class Product
     {
+        public int Id { get; }// у каждой сущности должен быть свой уник идентификатор
+        public string Title { get; }// описание свойства
+
+        public Product(int id, string title) // инициализируем в конструкторе
+        {
+            Title = title;
+            Id = id;
+        }
+
     }
 }
